@@ -1,2 +1,4 @@
 # MapReduce-Naive-Bayes-Classifier
 基于MapReduce实现的朴素贝叶斯分类器
+
+本项目实现了一个基于MapReduce并行的朴素贝叶斯分类器，并使用数据进行训练和测试。首先，使用python对原始的文本数据进行处理，使得一个类别的文档全部按照一定的格式保存在一个文本中（对训练集和测试集分别处理）。将预处理好的数据作为输入数据进行训练和测试，运行的结果在nohup.out中。作者使用的测试集群有四个节点，一个master节点，三个slave节点，每个节点有8个core和8GB memory，HDFS总大小为150GB，hadoop版本为2.7.4。
